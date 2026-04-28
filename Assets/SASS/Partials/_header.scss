@@ -1,0 +1,93 @@
+.site-header {
+  width: 100%;
+  padding: 1.5rem 1.5rem 1.25rem;
+  position: sticky;
+  top: 0;
+  background: rgba(252, 221, 243, 0.82);
+  backdrop-filter: blur(8px);
+  z-index: 30;
+
+  &__inner {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 1rem;
+
+    > a {
+      display: flex;
+      align-items: flex-end;
+      gap: 1rem;
+      text-decoration: none;
+      color: inherit;
+
+      &:hover,
+      &:visited,
+      &:focus {
+        text-decoration: none;
+        color: inherit;
+      }
+    }
+  }
+}
+
+.site-exlibris {
+  height: 1.6rem;
+  width: auto;
+  display: block;
+  margin-bottom: 0.15rem;
+}
+
+.site-title {
+  margin: 0;
+  font-size: 2.4rem;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  line-height: 1;
+  color: #ff1fad;
+  text-decoration: none;
+}
+
+.main-nav {
+  &__list {
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__item a {
+    text-decoration: none;
+    color: #111;
+    font-size: 0.68rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transition: opacity 0.18s ease;
+  }
+
+  &__item a:hover {
+    opacity: 0.35;
+  }
+
+  &__item--active a {
+    color: #ff1fad;
+    text-decoration: underleine;
+  }
+}
+
+@media (max-width: 600px) {
+  .site-header {
+    padding: 1rem 0.75rem 0.85rem;
+
+    &__inner { gap: 0.5rem; }
+  }
+
+  .site-title { font-size: 1.8rem; }
+
+  .site-exlibris { height: 1.1rem; }
+
+  .main-nav__list { gap: 0.75rem; }
+
+  .main-nav__item a { font-size: 0.58rem; }
+}

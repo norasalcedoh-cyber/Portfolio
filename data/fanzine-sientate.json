@@ -1,0 +1,113 @@
+{
+  "titulo_pagina": "Fanzine — Siéntate o no · Nora Salcedo Hernández",
+
+  "hero": {
+    "src": "Assets/img/Fanzines/Fanzine sientate o no/IMG_4087.JPG",
+    "alt": "Fanzine Siéntate o no"
+  },
+
+  "categoria": "Editorial · Fanzine",
+  "titulo": "Siéntate<br>o no",
+  "subtitulo": "Fanzine de autor — edición limitada",
+  "intro": "El objetivo de este proyecto consta de diseñar y producir un fanzine (publicación impresa experimental) basado en una pieza de la colección permanente del Museo Nacional de Artes Decorativas (MNAD). No se debe representar el objeto literalmente, sino reinterpretarlo creativamente desde el presente.",
+
+  "meta": [
+    { "label": "Disciplina",  "valor": "Diseño Editorial · Fanzine" },
+    { "label": "Año",         "valor": "2025" },
+    { "label": "Exposición",         "valor": "Museo de Artes Decorativas de Madrid" },
+    { "label": "Link",         "valor": "<a href=\"https://www.instagram.com/p/DKfCXOPIO5K/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==\" target=\"_blank\" rel=\"noopener\">Enlace a instagram</a>" }
+  ],
+
+  "bloques": [
+    {
+      "tipo": "full",
+      "src": "Assets/img/Fanzines/Fanzine sientate o no/IMG_4080.JPG",
+      "alt": "Fanzine Siéntate o no — portada",
+      "caption": "Portada — impresión en risografía sobre papel de 80g"
+    },
+    {
+      "tipo": "texto",
+      "parrafos": [
+        "¿Qué pasaría si ese condicionamiento no existiera? ¿Si cada persona pudiera sentarse como quisiera, guiada únicamente por sus experiencias, aprendizajes y emociones?",
+        "Bajo la inspiración de juegos y juguetes del museo de artes decorativas, seleccioné la silla miniatura de coleccionista para casas de muñecas. Y con los condicionantes interaccion y dispersión me llevo a indagar en las teorías del apego reflejadas en las mil maneras de sentarse en una silla de Bruno Munari."
+      ]
+    },
+    {
+      "tipo": "duo",
+      "items": [
+        {
+          "src": "Assets/img/Fanzines/Fanzine sientate o no/IMG_4081.JPG",
+          "alt": "Fanzine interior 1",
+          "caption": "Portada — Siéntate (o no)"
+        },
+        {
+          "src": "Assets/img/Fanzines/Fanzine sientate o no/IMG_4082.JPG",
+          "alt": "Fanzine interior 2",
+          "caption": "ContraPortada— Cómo te sientes te sientas"
+        }
+      ]
+    },
+    {
+      "tipo": "img",
+      "src": "Assets/img/Fanzines/Fanzine sientate o no/IMG_4086.JPG",
+      "alt": "Fanzine detalle encuadernación",
+      "caption": "Doble Página"
+    },
+    {
+      "tipo": "texto-duo",
+      "parrafos": [
+        "Gracias a poder contar con la oportunidad de ser profe de dibujo de unos niños preciosos, pude descubrir la visión desde una mirada infantil donde se vive en un sisitema sin condicionantes, es como viajar a un planeta donde la sociedad y la política no te hace sentarte de manera normativa. ",
+        "Además de buscar una conexión cercana con los lectores, mi intención es despertar nuestro lado más infantil: esa forma libre y desinhibida de relacionarnos con los objetos, ajena a las estructuras del sistema social que nos rodea."
+      ]
+    },
+    {
+      "tipo": "marquee",
+      "caption": "Secuencia completa — páginas interiores del fanzine",
+      "items": [
+        { "src": "Assets/img/Fanzines/Fanzine sientate o no/IMG_4083.JPG", "alt": "Fanzine p.03" },
+        { "src": "Assets/img/Fanzines/Fanzine sientate o no/IMG_4086.JPG", "alt": "Fanzine p.06" },
+        { "src": "Assets/img/Fanzines/Fanzine sientate o no/IMG_4087.JPG", "alt": "Fanzine p.07" },
+        { "src": "Assets/img/Fanzines/Fanzine sientate o no/IMG_4088.JPG", "alt": "Fanzine p.08" },
+        { "src": "Assets/img/Fanzines/Fanzine sientate o no/IMG_4089.JPG", "alt": "Fanzine p.09" },
+        { "src": "Assets/img/Fanzines/Fanzine sientate o no/IMG_4090.JPG", "alt": "Fanzine p.10" },
+        { "src": "Assets/img/Fanzines/Fanzine sientate o no/IMG_4091.JPG", "alt": "Fanzine p.11" }
+      ]
+    },
+    {
+      "tipo": "duo",
+      "items": [
+        {
+          "src": "Assets/img/Fanzines/Fanzine sientate o no/IMG_4089.JPG",
+          "alt": "Fanzine detalle 1",
+          "caption": "Detalle de página — composición y espacio"
+        },
+        {
+          "src": "Assets/img/Fanzines/Fanzine sientate o no/IMG_4091.JPG",
+          "alt": "Fanzine detalle 2",
+          "caption": "Créditos — cierre"
+        }
+      ]
+    },
+    {
+      "tipo": "texto",
+      "parrafos": [
+        "Gracias a mi padre y mi madre por haber reflejado mi infancia en imágenes tan bonitas y que eso haga que la recuerde con mucho amor y cariño. Gracias a mi hermana por estar siempre acompañándome y ayudándome a entender la niñez desde su mirada."
+      ]
+    }
+  ],
+
+  "nav": {
+    "prev": {
+      "href":   "teatros-canal.html",
+      "thumb":  "Assets/img/Identidad/Mockups teatros del canal/Cartel obras finales.png",
+      "alt":    "Teatros del Canal",
+      "nombre": "Teatros del Canal"
+    },
+    "next": {
+      "href":   "fashion-week.html",
+      "thumb":  "Assets/img/Motion/FW/pasarela.mp4",
+      "alt":    "Fashion Week",
+      "nombre": "Fashion Week"
+    }
+  }
+}

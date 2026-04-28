@@ -1,0 +1,103 @@
+{
+  "titulo_pagina": "Teatros del Canal — Nora Salcedo Hernández",
+
+  "hero": {
+    "src": "Assets/img/Identidad/Mockups teatros del canal/Cartel obras finales.png",
+    "alt": "Teatros del Canal — Cartel obras"
+  },
+
+  "categoria": "Identidad Visual",
+  "titulo": "Teatros<br>del Canal",
+  "subtitulo": "Brand Identity & Communication System",
+  "intro": "Sistema de identidad visual para Teatros del Canal, en Madrid. El proyecto desarrolla un lenguaje gráfico completo, modular: Isotipo, tipografía modular generada, paleta cromática y aplicaciones en cartelería, papelería, señalética y entornos digitales.",
+
+  "meta": [
+    { "label": "Cliente",     "valor": "Teatros del Canal" },
+    { "label": "Año",         "valor": "2025" },
+    { "label": "Link",         "valor": "<a href=\"https://www.instagram.com/p/DRWqRYUjWlX/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==\" target=\"_blank\" rel=\"noopener\">Enlace a instagram</a>" },
+    { "label": "Disciplinas", "valor": "Identidad Visual · Cartelería · Editorial" }
+  ],
+
+  "bloques": [
+    {
+      "tipo": "full",
+      "src": "Assets/img/Identidad/Mockups teatros del canal/MOCKUP VANDERA.png",
+      "alt": "Bandera Teatros del Canal",
+      "caption": "Aplicación en banderola exterior — sistema modular de señalética"
+    },
+    {
+      "tipo": "texto",
+      "parrafos": [
+        "Rediseñando buscamos transmitir una identidad ÚNICA, reconocible y coherente con nuestra esencia; un espíritu HÍBRIDO que combine innovación y tradición; un lenguaje en MOVIMIENTO, que evoluciona y se transforma con el arte; y una energía VIBRANTE, que contagie emoción, ritmo y vida en cada una de nuestras expresiones visuales y escénicas.",
+        "La identidad funciona tanto en formato impreso de gran escala —carteles, banderolas— como en piezas pequeñas: entradas, tarjetas de visita, app y redes sociales."
+      ]
+    },
+    {
+      "tipo": "duo",
+      "items": [
+        {
+          "src": "Assets/img/Identidad/Mockups teatros del canal/Tarjeta03.png",
+          "alt": "Tarjeta de visita 01",
+          "caption": "Tarjeta de visita — anverso y reverso"
+        },
+        {
+          "src": "Assets/img/Identidad/Mockups teatros del canal/Free_Ticket_Mockup_3.png",
+          "alt": "Entrada Teatros del Canal",
+          "caption": "Entrada — sistema de ticketing"
+        }
+      ]
+    },
+    {
+      "tipo": "img",
+      "src": "Assets/img/Identidad/Mockups teatros del canal/Folletos_prom.png",
+      "alt": "Folletos promocionales",
+      "caption": "Folletos para programación de temporada"
+    },
+    {
+      "tipo": "texto-duo",
+      "parrafos": [
+        "El cartel como pieza central del sistema: cada espectáculo tiene su propio cartel dentro de una misma arquitectura visual, devido a que los teatros cuentan con varias salas definidas por distintos nombres, diferenciadas por su color aplicado. ",
+        "La paleta cromática, compuesta por un naranja institucional, y avrios colores secundarios aplicados a cada una de las salas del teatro "
+      ]
+    },
+    {
+      "tipo": "marquee",
+      "caption": "Línea de aplicaciones — tote bag, cartelería, carteles de salas concretas...",
+      "items": [
+        { "src": "Assets/img/Identidad/Mockups teatros del canal/Merchandising03.png", "alt": "Merchandising" },
+        { "src": "Assets/img/Identidad/Mockups teatros del canal/Merchandising01.png", "alt": "Merchandising" },
+        { "src": "Assets/img/Identidad/Mockups teatros del canal/insta.png", "alt": "Instagram" },
+        { "src": "Assets/img/Identidad/Mockups teatros del canal/Papeleria01.png", "alt": "Papelería" },
+        { "src": "Assets/img/Identidad/Mockups teatros del canal/Folletos_indv.png", "alt": "Folleto sala" },
+        { "src": "Assets/img/Identidad/Mockups teatros del canal/Cartel05.png", "alt": "Folletos" }
+      ]
+    },
+    {
+      "tipo": "video",
+      "video": "Assets/img/Identidad/Mockups teatros del canal/REELMOVIL.mp4",
+      "alt": "App Teatros del Canal",
+      "caption": "Aplicación móvil — pantalla de programación"
+    },
+    {
+      "tipo": "texto",
+      "parrafos": [
+        "El resultado es un un sistema visual vivo, flexible y en constante transformación, que refleja su esencia como espacio de vanguardia, creatividad y encuentro cultural."
+      ]
+    }
+  ],
+
+  "nav": {
+    "prev": {
+      "href":   "chimpatia.html",
+      "thumb":  "Assets/img/Identidad/Mockup chimpatia/phone 3.png",
+      "alt":    "Chimpatía",
+      "nombre": "Chimpatía"
+    },
+    "next": {
+      "href":   "fanzine-sientate.html",
+      "thumb":  "Assets/img/Fanzines/Fanzine sientate o no/IMG_4087.JPG",
+      "alt":    "Siéntate o no",
+      "nombre": "Siéntate o no"
+    }
+  }
+}

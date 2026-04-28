@@ -1,0 +1,25 @@
+.stars-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+// Las estrellas las genera el JS, este es su estilo base
+.star {
+  position: absolute;
+  color: #ffb6d9;
+  line-height: 1;
+  user-select: none;
+  will-change: transform;
+  opacity: var(--star-opacity, 0.6);
+  font-size: var(--star-size, 0.95rem);
+  text-shadow: 0 0 1px rgba(255, 255, 255, 0.8);
+}
+
+// El contenido del sitio siempre por encima del fondo
+.site-wrapper {
+  position: relative;
+  z-index: 1;
+}

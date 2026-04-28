@@ -1,0 +1,126 @@
+{
+  "titulo_pagina": "Poster — Nora Salcedo Hernández",
+
+  "hero": {
+    "src": "Assets/img/Editorial/POSTER mockups/libro solapa MOCKUP 1.png",
+    "alt": "Poster — Colección editorial"
+  },
+
+  "categoria": "Editorial · Diseño de Poster",
+  "titulo": "Poster",
+  "subtitulo": "Colección editorial — Rediseño del anuario de la ESD de Madrid",
+  "intro": "Proyecto editorial del rediseño de poster, anuario de la Escuela Superior de diseño y colección del anuario para poder generar una colección. Trabajado con la identidad de la ESD en colaboración con Silvia Ferpal",
+
+  "meta": [
+    { "label": "Disciplina",  "valor": "Diseño Editorial · Poster" },
+    { "label": "Año",         "valor": "2026" },
+    { "label": "Formato",     "valor": "Colección del Anuario de la ESD de Madrid" },
+    { "label": "Link",         "valor": "<a href=\"https://www.instagram.com/p/DTH5uC4jH5Y/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==\" target=\"_blank\" rel=\"noopener\">Enlace a instagram</a>" },
+    { "label": "Técnica",     "valor": "Maquetación" }
+  ],
+
+  "bloques": [
+    {
+      "tipo": "full",
+      "src": "Assets/img/Editorial/POSTER mockups/libro solapa MOCKUP 1.2.png",
+      "alt": "Mockup libro solapa",
+      "caption": "Colección — libro con solapa, vista general"
+    },
+    {
+      "tipo": "texto",
+      "parrafos": [
+        "Asegurar una expresión visual coherente alineada con la visión de la ESD, que se entiende como una actitud para observar, cuestionar y transformar el mundo a través del diseño crítico y experimental.",
+        "Se enfoca en pilares como el impacto social, la experimentación y la colaboración en proyectos reales, diferenciando la marca de enfoques elitistas o clásicos hacia uno más cercano, limpio e innovador. Propone una identidad dual: institucional (sobria) y experimental (desenfadada)."
+      ]
+    },
+    {
+      "tipo": "duo",
+      "items": [
+        {
+          "src": "Assets/img/Editorial/POSTER mockups/libro solapa MOCKUP 2.png",
+          "alt": "Mockup 2",
+          "caption": "Colección 2 — lomo y cubierta, solapa abierta"
+        },
+        {
+          "src": "Assets/img/Editorial/POSTER mockups/libro solapa MOCKUP 3.png",
+          "alt": "Mockup 3",
+          "caption": "Colección 3 — lomo y cubierta, solapa abierta"
+        }
+      ]
+    },
+    {
+      "tipo": "duo",
+      "items": [
+        {
+          "src": "Assets/img/Editorial/POSTER mockups/memo 1.png",
+          "alt": "Memo 1",
+          "caption": "Memo 2 — apartado"
+        },
+        {
+          "src": "Assets/img/Editorial/POSTER mockups/memo 2.png",
+          "alt": "Memo 2",
+          "caption": "Memo 3 — apartado"
+        }
+      ]
+    },
+    {
+      "tipo": "texto-duo",
+      "parrafos": [
+        "El anuario (ESD Madrid 2021-2022) recopila proyectos estudiantiles de Grados y Másters para documentar el curso post-pandemia, visibilizar la excelencia de la ESD como cantera innovadora de diseñadores críticos/sostenibles, promover su rol institucional (apoyo regional, movilidad Erasmus) y reflexionar teóricamente sobre diseño como herramienta transformadora ante retos sociales/ecológicos.",
+        "Busqueda de la representación artística en el libro, disminuyendo la estética técnica. Mediante páginas visuales, y generar el anuario como una experiencia visual y de diseño.Trabajar la portada con limpieza visual, añadir solapas  de color. Trabajar sus ediciones con alteraciones en los elementos gráficos, su composición en la retícula y los colores de las solapas. "
+      ]
+    },
+    {
+      "tipo": "duo",
+      "items": [
+        {
+          "src": "Assets/img/Editorial/POSTER mockups/portada coleccion 2.png",
+          "alt": "Portada colección 2",
+          "caption": "Colección — variante 2"
+        },
+        {
+          "src": "Assets/img/Editorial/POSTER mockups/portada coleccion 3.png",
+          "alt": "Portada colección 3",
+          "caption": "Colección — variante 3"
+        }
+      ]
+    },
+    {
+      "tipo": "marquee",
+      "caption": "Colección completa — Interior",
+      "items": [
+        { "src": "Assets/img/Editorial/POSTER mockups/libro solapa MOCKUP 1.png",  "alt": "Mockup 1" },
+        { "src": "Assets/img/Editorial/POSTER mockups/libro solapa MOCKUP 4.png",  "alt": "Mockup 4" },
+        { "src": "Assets/img/Editorial/POSTER mockups/libro solapa MOCKUP 5.png",  "alt": "Mockup 5" },
+        { "src": "Assets/img/Editorial/POSTER mockups/libro solapa MOCKUP 6.png",  "alt": "Mockup 6" },
+        { "src": "Assets/img/Editorial/POSTER mockups/libro solapa MOCKUP 7.png",  "alt": "Mockup 7" },
+        { "src": "Assets/img/Editorial/POSTER mockups/libro solapa MOCKUP 8.png",  "alt": "Mockup 8" },
+        { "src": "Assets/img/Editorial/POSTER mockups/libro solapa MOCKUP 9.png",  "alt": "Mockup 9" },
+        { "src": "Assets/img/Editorial/POSTER mockups/libro solapa MOCKUP 10.png", "alt": "Mockup 10" },
+        { "src": "Assets/img/Editorial/POSTER mockups/libro solapa MOCKUP 11.png", "alt": "Mockup 11" },
+        { "src": "Assets/img/Editorial/POSTER mockups/libro solapa MOCKUP 12.png", "alt": "Mockup 12" },
+        { "src": "Assets/img/Editorial/POSTER mockups/libro solapa MOCKUP 13.png", "alt": "Mockup 13" },
+        { "src": "Assets/img/Editorial/POSTER mockups/libro solapa MOCKUP 14.png", "alt": "Mockup 14" },
+        { "src": "Assets/img/Editorial/POSTER mockups/libro solapa MOCKUP 15.png", "alt": "Mockup 15" },
+        { "src": "Assets/img/Editorial/POSTER mockups/memo 1.1.png",               "alt": "Memo 1.1" },
+        { "src": "Assets/img/Editorial/POSTER mockups/memo 3.png",                 "alt": "Memo 3" }
+      ]
+    },
+    {
+      "tipo": "texto",
+      "parrafos": [
+        "El resultado es un sistema editorial completo, escalable y coherente que puede crecer con nuevos títulos sin perder su identidad de la ESD. "
+      ]
+    }
+  ],
+
+  "nav": {
+    "prev": {
+      "href":   "delfines-de-plata.html",
+      "thumb":  "Assets/img/delfines.jpg",
+      "alt":    "Delfines de Plata",
+      "nombre": "Delfines de Plata"
+    },
+    "next": null
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "titulo_pagina": "Fashion Week — Nora Salcedo Hernández",
+
+  "hero": null,
+
+  "categoria": "Motion Design",
+  "titulo": "Fashion<br>Week",
+  "subtitulo": "Motion Graphics — Madrid Fashion Week",
+  "intro": "Proyecto de motion design para Madrid Fashion Week. Una serie de piezas audiovisuales que capturan la esencia de los diseños de la artista luxfero y su colección EMBODY",
+
+  "meta": [
+    { "label": "Disciplina",   "valor": "Motion Design · 3D" },
+    { "label": "Año",          "valor": "2026" },
+    { "label": "Contexto",     "valor": "Madrid Fashion Week" },
+    { "label": "Herramientas", "valor": "After Effects · Resolume" },
+    { "label": "Link",         "valor": "<a href=\"https://www.instagram.com/reel/DWbe0CwiELE/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==\" target=\"_blank\" rel=\"noopener\">Enlace a instagram</a>" }
+  ],
+
+  "bloques": [
+    {
+      "tipo": "hero-split",
+      "video": "Assets/img/Motion/FW/pasarela.mp4",
+      "claim": "PASARELA EMBODY DESDE LA ESD HASTA LA FASHION WEEK"
+    },
+    {
+      "tipo": "video-trio",
+      "items": [
+        { "src": "Assets/img/Motion/FW/cara.mp4",        "caption": "Cara" },
+        { "src": "Assets/img/Motion/FW/ojo def (1).mp4", "caption": "Ojo" },
+        { "src": "Assets/img/Motion/FW/boca.mp4",        "caption": "Boca" },
+        { "src": "Assets/img/Motion/FW/joya 3d (1).mp4", "caption": "Joya 3D" }
+      ]
+    },
+    {
+      "tipo": "texto-duo",
+      "parrafos": [
+        "El proyecto parte de la colaboración de la Escuela Superior de Diseño de Madrid con la diseñadora luxfero, seleccionada para presentar su colección EMBODY en la pasarela de Madrid Fashion Week y contando con nuestra participación en los visuales que acompañaron la pasarela.",
+         "Mi rol fue el de diseñar y producir una serie de piezas audiovisuales que acompañaran la presentación de la colección, además de ir coordinado con la música, buscando reflejar su esencia y potenciar su impacto visual. Luxfero cuenta con varios elementos decorativos como joyas muy destacadas que pudimos hacerlas realidad mediante 3D. Además de tratar temas muy personales y reflexivos como la dismorfia corporal o los cánones de belleza en la sociedad."
+      ]
+    },
+    {
+      "tipo": "texto",
+      "parrafos": [
+        "El resultado es una suite de vídeos pensados para  proyección en pasarela: formato vertical, duración breve, impacto inmediato."
+      ]
+    }
+  ],
+
+  "nav": {
+    "prev": {
+      "href":   "fanzine-sientate.html",
+      "thumb":  "Assets/img/Fanzines/Fanzine sientate o no/IMG_4087.JPG",
+      "alt":    "Siéntate o no",
+      "nombre": "Siéntate o no"
+    },
+    "next": {
+      "href":   "delfines-de-plata.html",
+      "thumb":  "Assets/img/delfines.jpg",
+      "alt":    "Delfines de Plata",
+      "nombre": "Delfines de Plata"
+    }
+  }
+}

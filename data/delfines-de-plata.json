@@ -1,0 +1,50 @@
+{
+  "titulo_pagina": "Delfines de Plata — Nora Salcedo Hernández",
+
+  "hero": {
+    "src": "Assets/img/delfines.jpg",
+    "alt": "Delfines de Plata — Javier Elorrieta"
+  },
+
+  "categoria": "Dirección de Arte",
+  "titulo": "Delfines<br>de Plata",
+  "subtitulo": "Dirección de Arte — Javier Elorrieta",
+  "intro": "Proyecto de dirección de arte para Delfines de Plata de Javier Elorrieta. De la mano del director artistico Javier Crespo, colaborando Participación en el departamento de arte apoyando en la ejecución visual del proyecto.(Ver créditos finales)",
+
+  "meta": [
+    { "label": "Cliente",     "valor": "Javier Elorrieta" },
+    { "label": "Año",         "valor": "2022-2023" },
+    { "label": "Rol",         "valor": "Ayudandote en Dirección de Arte con Javier Crespo" },
+    { "label": "Disciplinas", "valor": "Dirección de Arte" }
+  ],
+
+  "bloques": [
+    {
+      "tipo": "youtube",
+      "src": "https://www.youtube.com/embed/fA1R7jl26r4?si=nLy4h9qJ7Co4CgbF",
+      "title": "Delfines de Plata — Javier Elorrieta"
+    },
+    {
+      "tipo": "texto",
+      "parrafos": [
+        "Un proyecto de dirección de arte que construye la identidad visual de Delfines de Plata desde cero: paleta cromática, tipografía, composición y aplicaciones.",
+        "El reto fue crear un lenguaje gráfico capaz de sostener la propuesta artística de Javier Elorrieta"
+      ]
+    }
+  ],
+
+  "nav": {
+    "prev": {
+      "href":   "fashion-week.html",
+      "thumb":  "Assets/img/Motion/FW/pasarela.mp4",
+      "alt":    "Fashion Week",
+      "nombre": "Fashion Week"
+    },
+    "next": {
+      "href":   "poster.html",
+      "thumb":  "Assets/img/Editorial/POSTER mockups/libro solapa MOCKUP 1.png",
+      "alt":    "Poster",
+      "nombre": "Poster"
+    }
+  }
+}

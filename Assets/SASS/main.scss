@@ -1,0 +1,39 @@
+@import 'Partials/estrellas';
+@import 'Partials/header';
+@import 'Partials/filas';
+@import 'Partials/trabajos';
+@import 'Partials/fancybox';
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+@font-face {
+  font-family: 'Britanica';
+  src: local('Britanica'), local('Britanica-Regular');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Britanica';
+  src: local('Britanica Heavy'), local('Britanica-Heavy'),
+       local('Britanica Bold'),  local('Britanica-Bold');
+  font-weight: 700 900;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  font-family: 'Britanica', Arial, Helvetica, sans-serif;
+  a{
+    text-decoration: none;
+    color: $pink;
+
+  }
+}
+
+main, .site-wrapper { width: 100%; }
+
+img { display: block; }

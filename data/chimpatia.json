@@ -1,0 +1,122 @@
+{
+  "titulo_pagina": "Chimpatía — Nora Salcedo Hernández",
+
+  "hero": {
+    "src": "Assets/img/Identidad/Mockup chimpatia/home web.png",
+    "alt": "Chimpatía — Home web"
+  },
+
+  "categoria": "Identidad Visual",
+  "titulo": "Chimpatía",
+  "subtitulo": "Brand Identity & Licensing Design",
+  "intro": "Proyecto de identidad visual completa para Chimpatía, es el nombre de marca del Santuario Rainfer, pionero en España en rescatar, rehabilitar y cuidar de por vida a primates víctimas de tráfico ilegal, circos y abandono.",
+
+  "meta": [
+    { "label": "Cliente",     "valor": "Chimpatía" },
+    { "label": "Año",         "valor": "2025" },
+    { "label": "Link",         "valor": "<a href=\"https://www.instagram.com/p/DTnL6kJjEyM/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==\" target=\"_blank\" rel=\"noopener\">Enlace a instagram</a>" },
+    { "label": "Disciplinas", "valor": "Identidad Visual · Packaging · Motion · Digital" }
+  ],
+
+  "bloques": [
+    {
+      "tipo": "full",
+      "src": "Assets/img/Identidad/Mockup chimpatia/phone 3.png",
+      "alt": "Chimpatía app móvil",
+      "caption": "Identidad aplicada a entorno digital — pantalla de inicio",
+      "height": "85vh"
+    },
+    {
+      "tipo": "texto",
+      "parrafos": [
+        "La identidad nace de Busca transmitir empatía, hogar y reconexión con sus orígenes, devolviendo a los animales su vida natural en grupos sociales y entornos selváticos, con el lema Volver a ser ellos. A través de valores como bienestar animal y educación ambiental, sensibiliza a la sociedad para un futuro sin explotación. Su diseño visual evoca ciclos de retorno a la naturaleza y el amor familiar.",
+        "El rediseño de Chimpatía define su identidad como un sistema visual emocional, flexible e informativo, que reconecta a los primates con sus orígenes naturales mientras transmite solidaridad al santuario Rainfer."
+      ]
+    },
+    {
+      "tipo": "trio",
+      "items": [
+        {
+          "src": "Assets/img/Identidad/Mockup chimpatia/phone 1.1.png",
+          "alt": "Chimpatía móvil 1",
+          "caption": "App — pantalla de perfil"
+        },
+        {
+          "src": "Assets/img/Identidad/Mockup chimpatia/phone 2.png",
+          "alt": "Chimpatía móvil 2",
+          "caption": "App — pantalla de tienda"
+        },
+        {
+          "video": "Assets/img/Identidad/Mockup chimpatia/video final.mp4",
+          "alt": "Chimpatía vídeo final",
+          "caption": "App — video promocional reels Instagram"
+        }
+      ]
+    },
+    {
+      "tipo": "img",
+      "src": "Assets/img/Identidad/Mockup chimpatia/CALCETINES.png",
+      "alt": "Chimpatía calcetines",
+      "caption": "Calcetines — línea de merchandising textil"
+    },
+    {
+      "tipo": "texto-duo",
+      "parrafos": [
+        "El merchandising es el eje central de la marca: cada objeto es portador del universo Chimpatía. La coherencia visual entre prendas, accesorios y packaging convierte cada pieza en parte de un todo reconocible.",
+        "Los materiales y acabados se eligieron para reforzar el posicionamiento: calidad artesanal, ediciones limitadas y una estética que mezcla lo naïf con lo contemporáneo."
+      ]
+    },
+    {
+      "tipo": "marquee",
+      "caption": "Línea completa de merchandising — textil, accesorios y lifestyle",
+      "items": [
+        { "src": "Assets/img/Identidad/Mockup chimpatia/camiseta mockup 2.png", "alt": "Camiseta" },
+        { "src": "Assets/img/Identidad/Mockup chimpatia/niño.png", "alt": "Calcetines" },
+        { "src": "Assets/img/Identidad/Mockup chimpatia/chapas.png", "alt": "Chapas" },
+        { "src": "Assets/img/Identidad/Mockup chimpatia/chauqeta.png", "alt": "Chaqueta" },
+        { "src": "Assets/img/Identidad/Mockup chimpatia/niño.png", "alt": "niño" },
+        { "src": "Assets/img/Identidad/Mockup chimpatia/llavero.png", "alt": "Llavero" },
+        { "src": "Assets/img/Identidad/Mockup chimpatia/peluches.png", "alt": "Peluches" },
+        { "src": "Assets/img/Identidad/Mockup chimpatia/vela mockup 1.png", "alt": "Vela" },
+        { "src": "Assets/img/Identidad/Mockup chimpatia/tazas.png", "alt": "Tazas" }
+      ]
+    },
+    {
+      "tipo": "duo",
+      "items": [
+        {
+          "src": "Assets/img/Identidad/Mockup chimpatia/peluches2.png",
+          "alt": "Peluches Chimpatía",
+          "caption": "Colección de peluches — edición limitada"
+        },
+        {
+          "src": "Assets/img/Identidad/Mockup chimpatia/vela mockup 2.png",
+          "alt": "Vela Chimpatía",
+          "caption": "Vela aromática — línea de lifestyle"
+        }
+      ]
+    },
+    {
+      "tipo": "img",
+      "src": "Assets/img/Identidad/Mockup chimpatia/White Isometric Business Cards.png",
+      "alt": "Tarjetas de visita Chimpatía",
+      "caption": "Tarjetas de visita — papelería corporativa"
+    },
+    {
+      "tipo": "texto",
+      "parrafos": [
+        "El resultado es una marca con vida propia: reconocible, querible y escalable. Un sistema que puede crecer con nuevas colecciones sin perder su esencia."
+      ]
+    }
+  ],
+
+  "nav": {
+    "prev": null,
+    "next": {
+      "href":   "teatros-canal.html",
+      "thumb":  "Assets/img/Identidad/Mockups teatros del canal/Cartel obras finales.png",
+      "alt":    "Teatros del Canal",
+      "nombre": "Teatros del Canal"
+    }
+  }
+}
