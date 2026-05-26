@@ -121,6 +121,11 @@
       "alt":    "Delfines de Plata",
       "nombre": "Delfines de Plata"
     },
-    "next": null
+    "next": {
+      "href":   "bandcamp.html",
+      "thumb":  "Assets/img/Identidad/BC mockup/Free Lying MacBook Pro Mockup.png",
+      "alt":    "Rediseño Bandcamp",
+      "nombre": "Rediseño Bandcamp"
+    }
   }
 }

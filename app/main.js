@@ -6,12 +6,69 @@ document.addEventListener('DOMContentLoaded', () => {
     history.replaceState(null, '', window.location.pathname + window.location.search);
   }
 
+  // ── CURSOR NAV FANCYBOX ────────────────────────────────
+  const PINK = '#ff1fad';
+  let fbArrow = null;
+  let fbContainer = null;
+
+  function fbInject() {
+    fbContainer = document.querySelector('.fancybox__container');
+    if (!fbContainer || fbContainer.dataset.fbUi) return;
+    fbContainer.dataset.fbUi = '1';
+
+    const mobile = window.matchMedia('(max-width:900px)').matches;
+
+    // × cerrar
+    const x = document.createElement('button');
+    x.textContent = '×';
+    x.style.cssText = 'position:fixed;top:16px;right:16px;z-index:2147483647;display:flex;align-items:center;justify-content:center;width:52px;height:52px;color:' + PINK + ';font-size:2.8rem;line-height:1;background:none;border:none;cursor:pointer;padding:0;font-family:Arial,sans-serif;-webkit-tap-highlight-color:transparent;';
+    fbContainer.appendChild(x);
+    x.addEventListener('click',    e => { e.stopPropagation(); window.Fancybox.close(); });
+    x.addEventListener('touchend', e => { e.preventDefault(); e.stopPropagation(); window.Fancybox.close(); });
+
+    if (!mobile) {
+      fbArrow = document.createElement('div');
+      fbArrow.style.cssText = 'position:fixed;z-index:9999;pointer-events:none;font-size:10rem;line-height:1;-webkit-text-stroke:2px ' + PINK + ';color:transparent;transform:translate(-50%,-55%);opacity:0;transition:opacity .1s;user-select:none;font-family:"Britanica",Arial,sans-serif;';
+      fbContainer.appendChild(fbArrow);
+      document.body.style.cursor = 'none';
+    }
+  }
+
+  function fbCleanup() {
+    if (fbContainer) delete fbContainer.dataset.fbUi;
+    fbArrow = null;
+    fbContainer = null;
+    document.body.style.cursor = '';
+  }
+
+  // Desktop: flecha sigue cursor
+  document.addEventListener('mousemove', e => {
+    if (!fbArrow) return;
+    fbArrow.textContent = e.clientX < window.innerWidth / 2 ? '‹' : '›';
+    fbArrow.style.left    = e.clientX + 'px';
+    fbArrow.style.top     = e.clientY + 'px';
+    fbArrow.style.opacity = '1';
+  });
+
+  // Navegación click/tap — capture para interceptar antes que Fancybox
+  document.addEventListener('click', e => {
+    if (!fbContainer) return;
+    if (!fbContainer.contains(e.target)) return;
+    if (e.target.closest('button')) return;  // deja pasar clicks en botones (×)
+    e.stopPropagation(); e.preventDefault();
+    const c = window.Fancybox?.getCarousel();
+    if (c) e.clientX < window.innerWidth / 2 ? c.prev() : c.next();
+  }, true);
+
   if (window.Fancybox) {
     Fancybox.bind('[data-fancybox]', {
-      Thumbs: false,
-      Hash: false,
-      Toolbar: {
-        display: { left: [], middle: [], right: ['close'] },
+      Thumbs:      false,
+      Hash:        false,
+      closeButton: false,
+      Toolbar:     { display: { left: [], middle: [], right: [] } },
+      on: {
+        init:    () => setTimeout(fbInject, 0),
+        destroy: ()  => fbCleanup(),
       },
     });
   }

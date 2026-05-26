@@ -1,0 +1,135 @@
+{
+  "titulo_pagina": "Rakuten TV — Nora Salcedo Hernández",
+
+  "hero": {
+    "src": "Assets/img/Identidad/Rakuten tv/Rectangle 128.png",
+    "alt": "Rakuten TV — Rediseño identidad"
+  },
+
+  "categoria": "Identidad Visual · UI Design",
+  "titulo": "Rakuten<br>TV",
+  "subtitulo": "Brand Redesign — Plataforma de streaming",
+  "intro": "Proyecto de rediseño de identidad visual para Rakuten TV, plataforma de streaming de contenido audiovisual. La propuesta construye un sistema visual más cohesionado, moderno y reconocible, manteniendo el rojo corporativo como eje cromático e incorporando nuevos recursos gráficos que refuerzan la experiencia de marca.",
+
+  "meta": [
+    { "label": "Disciplina",  "valor": "Identidad Visual · UI Design" },
+    { "label": "Año",         "valor": "2026" },
+    { "label": "Contexto",    "valor": "Proyecto académico — ESD Madrid" },
+    { "label": "Técnica",     "valor": "Branding · Motion · Digital" }
+  ],
+
+  "bloques": [
+    {
+      "tipo": "video",
+      "video": "Assets/img/Identidad/Rakuten tv/videoIntroMarca.mp4",
+      "alt": "Rakuten TV — Vídeo intro de marca",
+      "caption": "Animación de marca — intro institucional"
+    },
+    {
+      "tipo": "texto",
+      "parrafos": [
+        "Rakuten TV es una plataforma de streaming con un posicionamiento singular: entre el gran contenido de pago y el catálogo gratuito con publicidad. El rediseño trabaja sobre esa dualidad para construir una identidad que transmita calidad sin perder accesibilidad.",
+        "El sistema parte del rojo corporativo y lo expande en una paleta más rica, incorporando tipografía de mayor jerarquía y un lenguaje gráfico que funciona tanto en pantalla como en entornos físicos."
+      ]
+    },
+    {
+      "tipo": "duo",
+      "items": [
+        {
+          "src": "Assets/img/Identidad/Rakuten tv/Rectangle 1284.png",
+          "alt": "Rakuten TV pantalla 1",
+          "caption": "Aplicación — pantalla de inicio"
+        },
+        {
+          "src": "Assets/img/Identidad/Rakuten tv/Rectangle 1285.png",
+          "alt": "Rakuten TV pantalla 2",
+          "caption": "Aplicación — pantalla de catálogo"
+        }
+      ]
+    },
+    {
+      "tipo": "full",
+      "src": "Assets/img/Identidad/Rakuten tv/WhatsApp Image 2026-05-20 at 12.40.40.jpeg",
+      "alt": "Rakuten TV mockup exterior",
+      "caption": "Aplicación en entorno real",
+      "objectPosition": "center 20%"
+    },
+    {
+      "tipo": "texto-duo",
+      "parrafos": [
+        "El rediseño de la interfaz pone el contenido en el centro: menos elementos decorativos, más protagonismo para las portadas y una navegación más intuitiva que reduce la fricción entre el usuario y lo que quiere ver.",
+        "La marca en movimiento refuerza el posicionamiento premium: transiciones cuidadas, una paleta cromática consistente y una personalidad visual que se mantiene de la app al cartel, del spot a la señalética."
+      ]
+    },
+    {
+      "tipo": "marquee",
+      "caption": "Sistema completo — aplicaciones de la identidad en pantalla y comunicación",
+      "items": [
+        { "src": "Assets/img/Identidad/Rakuten tv/078959f8-a958-4daf-8e28-2463c145dcca.png", "alt": "Rakuten mockup 1" },
+        { "src": "Assets/img/Identidad/Rakuten tv/10f341de-4833-4b2a-8b1d-c2dc00e06bc6.png", "alt": "Rakuten mockup 2" },
+        { "src": "Assets/img/Identidad/Rakuten tv/14c52e96-7095-426d-ad73-f76fc916b9ea.png", "alt": "Rakuten mockup 3" },
+        { "src": "Assets/img/Identidad/Rakuten tv/1909046c-53ec-4968-ace9-88ebc0cda1f6.png", "alt": "Rakuten mockup 4" },
+        { "src": "Assets/img/Identidad/Rakuten tv/445c8521-bc6a-41a1-a06c-c63df4ea8e94.png", "alt": "Rakuten mockup 5" },
+        { "src": "Assets/img/Identidad/Rakuten tv/502d8a92-4e48-45f0-99eb-4b5ec37ffbb8.png", "alt": "Rakuten mockup 6" },
+        { "src": "Assets/img/Identidad/Rakuten tv/568bb6dc-e604-4c00-98b1-de8303874d40.png", "alt": "Rakuten mockup 7" },
+        { "src": "Assets/img/Identidad/Rakuten tv/65bcb107-adcf-44e7-b1e0-f8774b016935.png", "alt": "Rakuten mockup 8" },
+        { "src": "Assets/img/Identidad/Rakuten tv/697325e5-fa6d-4a3a-a45c-425604fd1353.png", "alt": "Rakuten mockup 9" },
+        { "src": "Assets/img/Identidad/Rakuten tv/6efa694d-fd97-4d35-98d2-6684637ce3e3.png", "alt": "Rakuten mockup 10" },
+        { "src": "Assets/img/Identidad/Rakuten tv/70c15b51-f8b1-424e-b286-adb8e3c6630f.png", "alt": "Rakuten mockup 11" },
+        { "src": "Assets/img/Identidad/Rakuten tv/9898740f-132d-426d-be43-f0bde54bafc2.png", "alt": "Rakuten mockup 12" },
+        { "src": "Assets/img/Identidad/Rakuten tv/3rtyuiop.png",                              "alt": "Rakuten mockup 13" }
+      ]
+    },
+    {
+      "tipo": "duo",
+      "items": [
+        {
+          "src": "Assets/img/Identidad/Rakuten tv/WhatsApp Image 2026-05-20 at 12.47.47.jpeg",
+          "alt": "Rakuten TV detalle 1",
+          "caption": "Detalle de aplicación — composición tipográfica"
+        },
+        {
+          "src": "Assets/img/Identidad/Rakuten tv/WhatsApp Image 2026-05-20 at 12.50.34.jpeg",
+          "alt": "Rakuten TV detalle 2",
+          "caption": "Detalle de aplicación — paleta cromática"
+        }
+      ]
+    },
+    {
+      "tipo": "duo",
+      "items": [
+        {
+          "src": "Assets/img/Identidad/Rakuten tv/WhatsApp Image 2026-05-20 at 13.04.47.jpeg",
+          "alt": "Rakuten TV aplicación 3",
+          "caption": "Comunicación — piezas de campaña"
+        },
+        {
+          "src": "Assets/img/Identidad/Rakuten tv/WhatsApp Image 2026-05-20 at 13.07.53.jpeg",
+          "alt": "Rakuten TV aplicación 4",
+          "caption": "Comunicación — variante de marca"
+        }
+      ]
+    },
+    {
+      "tipo": "texto",
+      "parrafos": [
+        "El resultado es una identidad renovada que mantiene el reconocimiento de la marca mientras la proyecta hacia una audiencia más amplia, con un sistema escalable y coherente en todos los puntos de contacto."
+      ]
+    }
+  ],
+
+  "nav": {
+    "prev": {
+      "href":   "bandcamp.html",
+      "thumb":  "Assets/img/Identidad/BC mockup/Free Lying MacBook Pro Mockup.png",
+      "alt":    "Rediseño Bandcamp",
+      "nombre": "Rediseño Bandcamp"
+    },
+    "next": {
+      "href":   "chimpatia.html",
+      "thumb":  "Assets/img/Identidad/Mockup chimpatia/phone 3.png",
+      "alt":    "Chimpatía",
+      "nombre": "Chimpatía"
+    }
+  }
+}

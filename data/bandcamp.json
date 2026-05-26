@@ -1,0 +1,119 @@
+{
+  "titulo_pagina": "Rediseño Bandcamp — Nora Salcedo Hernández",
+
+  "hero": {
+    "src": "Assets/img/Identidad/BC mockup/Free Lying MacBook Pro Mockup.png",
+    "alt": "Bandcamp — Rediseño identidad"
+  },
+
+  "categoria": "Identidad Visual · Digital",
+  "titulo": "Rediseño<br>Bandcamp",
+  "subtitulo": "Brand Redesign — Plataforma musical independiente",
+  "intro": "Proyecto de rediseño de identidad visual para Bandcamp, la plataforma de distribución musical independiente. La propuesta actualiza el sistema visual manteniendo su esencia underground y auténtica, ganando coherencia gráfica y modernidad sin perder el carácter que la diferencia.",
+
+  "meta": [
+    { "label": "Disciplina",  "valor": "Identidad Visual · UI Design" },
+    { "label": "Año",         "valor": "2025" },
+    { "label": "Contexto",    "valor": "Proyecto académico — ESD Madrid" },
+    { "label": "Técnica",     "valor": "Branding · Mockup · Digital" }
+  ],
+
+  "bloques": [
+    {
+      "tipo": "full",
+      "src": "Assets/img/Identidad/BC mockup/Free Horizontal Citylight Mockupgggd.png",
+      "alt": "Bandcamp — Aplicación exterior",
+      "caption": "Aplicación en vía pública — citylight y mupis"
+    },
+    {
+      "tipo": "texto",
+      "parrafos": [
+        "Bandcamp es la plataforma de referencia para músicos independientes: directa, sin intermediarios, construida sobre la confianza entre artista y oyente. El rediseño parte de esa filosofía para construir un sistema visual más limpio y escalable.",
+        "La nueva identidad propone una paleta reducida, tipografía con carácter propio y un sistema de iconografía que convive con los géneros más diversos sin imponer una estética dominante."
+      ]
+    },
+    {
+      "tipo": "duo",
+      "items": [
+        {
+          "src": "Assets/img/Identidad/BC mockup/phone.png",
+          "alt": "Bandcamp app móvil",
+          "caption": "Aplicación móvil — pantalla de artista"
+        },
+        {
+          "src": "Assets/img/Identidad/BC mockup/cami.png",
+          "alt": "Bandcamp camiseta",
+          "caption": "Merchandising — camiseta edición limitada"
+        }
+      ]
+    },
+    {
+      "tipo": "img",
+      "src": "Assets/img/Identidad/BC mockup/Free Bus Stop Poster at Night Mockup.png",
+      "alt": "Bandcamp cartel nocturno",
+      "caption": "Cartelería nocturna — sistema de comunicación exterior"
+    },
+    {
+      "tipo": "texto-duo",
+      "parrafos": [
+        "El sistema de packaging refleja la diversidad de formatos que conviven en la plataforma: desde el vinilo hasta el álbum digital, cada soporte adapta la identidad sin perder coherencia.",
+        "La paleta cromática, basada en un negro profundo con acentos de color vivo, refuerza la actitud DIY que define a Bandcamp frente a las grandes plataformas de streaming."
+      ]
+    },
+    {
+      "tipo": "marquee",
+      "caption": "Sistema completo — aplicaciones en merchandising, packaging y señalética",
+      "items": [
+        { "src": "Assets/img/Identidad/BC mockup/cd.png",                                              "alt": "CD" },
+        { "src": "Assets/img/Identidad/BC mockup/cd pop.png",                                         "alt": "CD pop" },
+        { "src": "Assets/img/Identidad/BC mockup/gorra.png",                                          "alt": "Gorra" },
+        { "src": "Assets/img/Identidad/BC mockup/tote bag.png",                                       "alt": "Tote bag" },
+        { "src": "Assets/img/Identidad/BC mockup/tote 2.png",                                         "alt": "Tote bag 2" },
+        { "src": "Assets/img/Identidad/BC mockup/STIKERSS.png",                                       "alt": "Stickers" },
+        { "src": "Assets/img/Identidad/BC mockup/TARJETAS DE REGALO.png",                             "alt": "Tarjetas de regalo" },
+        { "src": "Assets/img/Identidad/BC mockup/paquete.png",                                        "alt": "Paquete" },
+        { "src": "Assets/img/Identidad/BC mockup/paquete 2.png",                                      "alt": "Paquete 2" },
+        { "src": "Assets/img/Identidad/BC mockup/paquete 3.png",                                      "alt": "Paquete 3" },
+        { "src": "Assets/img/Identidad/BC mockup/clothing label mockup.png",                          "alt": "Etiqueta textil" },
+        { "src": "Assets/img/Identidad/BC mockup/asfghu.png",                                         "alt": "Aplicación" },
+        { "src": "Assets/img/Identidad/BC mockup/asertyuiop.png",                                     "alt": "Aplicación 2" }
+      ]
+    },
+    {
+      "tipo": "duo",
+      "items": [
+        {
+          "src": "Assets/img/Identidad/BC mockup/Free Urban Banners on Fence MockupHHH.png",
+          "alt": "Bandcamp vallas urbanas",
+          "caption": "Señalética urbana — vallas y banners exteriores"
+        },
+        {
+          "src": "Assets/img/Identidad/BC mockup/Free Vertical Billboard on th Brick Wall Mockupr56.png",
+          "alt": "Bandcamp billboard",
+          "caption": "Billboard vertical — campaña de lanzamiento"
+        }
+      ]
+    },
+    {
+      "tipo": "texto",
+      "parrafos": [
+        "El resultado es una identidad que respeta el espíritu de la plataforma mientras la hace más reconocible y profesional, preparada para crecer sin perder su autenticidad."
+      ]
+    }
+  ],
+
+  "nav": {
+    "prev": {
+      "href":   "poster.html",
+      "thumb":  "Assets/img/Editorial/POSTER mockups/libro solapa MOCKUP 1.png",
+      "alt":    "Poster ESD",
+      "nombre": "Poster ESD"
+    },
+    "next": {
+      "href":   "rakuten-tv.html",
+      "thumb":  "Assets/img/Identidad/Rakuten tv/Rectangle 128.png",
+      "alt":    "Rakuten TV",
+      "nombre": "Rakuten TV"
+    }
+  }
+}
