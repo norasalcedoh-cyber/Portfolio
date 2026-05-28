@@ -46,6 +46,18 @@
   line-height: 1;
   color: #ff1fad;
   text-decoration: none;
+
+  &::after {
+    content: '★';
+    display: inline-block;
+    margin-left: 0.3rem;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.55);
+    vertical-align: middle;
+    line-height: 1;
+    will-change: transform;
+    transform: rotate(var(--nav-star-rot, 0deg));
+  }
 }
 
 .main-nav {

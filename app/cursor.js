@@ -11,6 +11,14 @@
   `;
   document.head.appendChild(style);
 
+  // Estrella del nav — rota en scroll
+  const navTitle = document.querySelector('.site-title');
+  if (navTitle) {
+    window.addEventListener('scroll', () => {
+      navTitle.style.setProperty('--nav-star-rot', (window.scrollY * 0.3) + 'deg');
+    }, { passive: true });
+  }
+
   const cursor = document.querySelector('.cursor');
   if (!cursor) return;
 
