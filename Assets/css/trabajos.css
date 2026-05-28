@@ -261,3 +261,43 @@
   .proyecto__nav-item{padding:1.5rem 1rem}
   .proyecto__nav-nombre{font-size:1rem}
 }
+
+/* ── REVISTA PDF ─────────────────────────────────────── */
+.proyecto__bloque--revista {
+  margin-left: -5rem;
+  margin-right: -5rem;
+}
+.revista {
+  position: relative;
+  background: #f0f0f0;
+  box-shadow: 0 12px 56px rgba(0,0,0,.22);
+  overflow: hidden;
+}
+.revista__canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+  will-change: transform;
+  transform-origin: center center;
+}
+.revista__barra {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 0%;
+  background: #ff1fad;
+  transition: width .4s ease;
+}
+@media (max-width: 900px) {
+  .proyecto__bloque--revista {
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+  }
+}
+@media (max-width: 600px) {
+  .proyecto__bloque--revista {
+    margin-left: -1rem;
+    margin-right: -1rem;
+  }
+}

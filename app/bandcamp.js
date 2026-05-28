@@ -39,6 +39,7 @@ function init(d) {
   const cuerpo = document.querySelector('.proyecto__cuerpo');
   if (cuerpo && d.bloques) {
     cuerpo.innerHTML = d.bloques.map(renderBloque).join('');
+    document.querySelectorAll('[data-pdf]').forEach(el => initRevista(el));
   }
 
   const nav = document.querySelector('.proyecto__nav');
@@ -135,6 +136,15 @@ function renderBloque(b) {
         <div class="proyecto__bloque proyecto__bloque--texto-duo">
           ${b.parrafos.map(p => `<p>${p}</p>`).join('')}
         </div>`;
+    case 'pdf-revista':
+      return `
+        <div class="proyecto__bloque proyecto__bloque--revista" data-pdf="${b.src}">
+          <div class="revista">
+            <canvas class="revista__canvas"></canvas>
+            <div class="revista__barra"></div>
+          </div>
+          ${b.caption ? `<p class="proyecto__caption">${b.caption}</p>` : ''}
+        </div>`;
     case 'marquee':
       return `
         <div class="proyecto__bloque proyecto__bloque--marquee">
@@ -148,4 +158,85 @@ function renderBloque(b) {
     default:
       return '';
   }
+}
+
+function initRevista(block) {
+  const src    = block.dataset.pdf;
+  const canvas = block.querySelector('.revista__canvas');
+  const barra  = block.querySelector('.revista__barra');
+
+  const script = document.createElement('script');
+  script.src = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js';
+  script.onload = async () => {
+    pdfjsLib.GlobalWorkerOptions.workerSrc =
+      'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+
+    let pdf, total, pages;
+    try {
+      pdf   = await pdfjsLib.getDocument(src).promise;
+      total = pdf.numPages;
+      pages = [];
+
+      const SCALE = Math.min(window.devicePixelRatio || 1, 2) * 1.5;
+      for (let i = 1; i <= total; i++) {
+        const page = await pdf.getPage(i);
+        const vp   = page.getViewport({ scale: SCALE });
+        const c    = document.createElement('canvas');
+        c.width  = vp.width;
+        c.height = vp.height;
+        await page.render({ canvasContext: c.getContext('2d'), viewport: vp }).promise;
+        pages.push(c);
+      }
+    } catch (e) {
+      console.error('PDF no cargado:', e);
+      return;
+    }
+
+    canvas.width  = pages[0].width;
+    canvas.height = pages[0].height;
+    const ctx = canvas.getContext('2d');
+    ctx.drawImage(pages[0], 0, 0);
+
+    let current = 0;
+    const HALF  = 380;
+
+    function updateBarra(i) {
+      if (barra) barra.style.width = ((i + 1) / total * 100) + '%';
+    }
+    updateBarra(0);
+
+    function flipTo(next) {
+      next = ((next % total) + total) % total;
+      let t0 = null;
+
+      function out(ts) {
+        if (!t0) t0 = ts;
+        const p    = Math.min((ts - t0) / HALF, 1);
+        const ease = 1 - (1 - p) * (1 - p);
+        canvas.style.transform = `perspective(1400px) rotateY(${ease * -90}deg)`;
+        if (p < 1) { requestAnimationFrame(out); return; }
+
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.drawImage(pages[next], 0, 0);
+        current = next;
+        updateBarra(current);
+        canvas.style.transform = 'perspective(1400px) rotateY(90deg)';
+
+        let t1 = null;
+        function inn(ts2) {
+          if (!t1) t1 = ts2;
+          const p2    = Math.min((ts2 - t1) / HALF, 1);
+          const ease2 = 1 - (1 - p2) * (1 - p2);
+          canvas.style.transform = `perspective(1400px) rotateY(${(1 - ease2) * 90}deg)`;
+          if (p2 < 1) { requestAnimationFrame(inn); return; }
+          canvas.style.transform = '';
+        }
+        requestAnimationFrame(inn);
+      }
+      requestAnimationFrame(out);
+    }
+
+    setInterval(() => flipTo(current + 1), 3000);
+  };
+  document.head.appendChild(script);
 }
