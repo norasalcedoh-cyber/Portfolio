@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const stars = [];
 
   if (starsBg) {
-    const COLS = 26, ROWS = 22;
+    const COLS = 10, ROWS = 8;
 
     for (let r = 0; r < ROWS; r++) {
       for (let c = 0; c < COLS; c++) {
