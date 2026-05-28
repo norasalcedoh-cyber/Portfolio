@@ -1,85 +1,21 @@
 // ── FANCYBOX OVERRIDES ────────────────────────────────
-// IMPORTANTE: en el HTML, el CSS de Fancybox debe cargarse
-// ANTES que main.css para que estos overrides tengan prioridad.
-$pink: #ff1fad;
-
+// Fondo oscuro del lightbox
 .fancybox__backdrop {
   background: rgba(0, 0, 0, 0.93) !important;
 }
 
-.fancybox__toolbar {
-  background: none !important;
-  backdrop-filter: none !important;
-}
-
-.fancybox__nav .f-button,
-.fancybox__toolbar .f-button {
-  // CSS custom properties de Fancybox v5
-  --f-button-color: #{$pink};
-  --f-button-hover-color: #{$pink};
-  --f-button-bg: transparent;
-  --f-button-hover-bg: transparent;
-  --f-button-active-bg: transparent;
-
-  background: none !important;
-  border: none !important;
-  box-shadow: none !important;
-  color: $pink !important;
-  transition: opacity 0.2s ease !important;
-
-  &:hover {
-    opacity: 0.5 !important;
-    background: none !important;
-  }
-}
-
-// Flechas — grandes y finas
-.fancybox__nav .f-button {
-  width: 7rem !important;
-  height: 7rem !important;
-  padding: 0 !important;
-
-  svg {
-    width: 4rem !important;
-    height: 4rem !important;
-    stroke-width: 0.4 !important;
-    stroke: $pink !important;
-    fill: none !important;
-  }
-}
-
-// Cerrar — X rosa con dos líneas finas
-.fancybox__toolbar .f-button {
-  position: relative !important;
-  width: 5rem !important;
-  height: 5rem !important;
-  padding: 0 !important;
-
-  svg { display: none !important; }
-
-  &::before,
-  &::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 2.8rem;
-    height: 1.5px;
-    background: $pink;
-    transform-origin: center;
-    transition: opacity 0.2s ease;
-  }
-
-  &::before { transform: translate(-50%, -50%) rotate(45deg); }
-  &::after  { transform: translate(-50%, -50%) rotate(-45deg); }
-
-  &:hover::before,
-  &:hover::after { opacity: 0.4 !important; }
-}
-
-// Ocultar elementos no deseados
+// Ocultar TODA la UI nativa — usamos nuestra propia (inyectada por JS)
+.fancybox__toolbar,
+.fancybox__nav,
 .fancybox__counter,
 .fancybox__progress,
-.fancybox__infobar {
+.fancybox__infobar,
+.fancybox__caption,
+.fancybox__slide__error,
+.f-button,
+.fancybox__container .f-button,
+.fancybox__container [class*="fancybox__button"] {
   display: none !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
 }
