@@ -78,7 +78,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const stars = [];
 
   if (starsBg) {
-    const COLS = 10, ROWS = 8;
+    const isMobile = window.matchMedia('(max-width: 900px)').matches;
+    const COLS = isMobile ? 4 : 7;
+    const ROWS = isMobile ? 3 : 5;
+    const jitterX = 100 / (COLS - 1) * 0.45;
+    const jitterY = 100 / (ROWS - 1) * 0.45;
 
     for (let r = 0; r < ROWS; r++) {
       for (let c = 0; c < COLS; c++) {
@@ -88,9 +92,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const baseRotation = Math.random() * 360;
         const dir = (r + c) % 2 === 0 ? 1 : -1;
+        const ox = (Math.random() - 0.5) * jitterX;
+        const oy = (Math.random() - 0.5) * jitterY;
 
-        el.style.left = `${(c / (COLS - 1)) * 100}%`;
-        el.style.top  = `${(r / (ROWS - 1)) * 100}%`;
+        el.style.left = `${(c / (COLS - 1)) * 100 + ox}%`;
+        el.style.top  = `${(r / (ROWS - 1)) * 100 + oy}%`;
         el.style.setProperty('--star-size',    `${0.7 + Math.random() * 0.9}rem`);
         el.style.setProperty('--star-opacity', `${0.4 + Math.random() * 0.25}`);
         el.style.transformOrigin = 'center center';
