@@ -1,0 +1,49 @@
+// ── PRELOADER ─────────────────────────────────────────
+$pink: #ff1fad;
+
+.preloader {
+  position: fixed;
+  inset: 0;
+  z-index: 99998;
+  background: #fff;
+  transition: opacity .55s ease, visibility .55s ease;
+  pointer-events: all;
+
+  &.is-done {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
+
+.preloader__star {
+  position: absolute;
+  color: $pink;
+  line-height: 1;
+  user-select: none;
+  pointer-events: none;
+  font-size: var(--sz, 1rem);
+  animation: pl-twinkle var(--d, 1s) ease-in-out var(--dl, 0s) infinite alternate both;
+}
+
+.preloader__center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: $pink;
+  font-size: 4rem;
+  line-height: 1;
+  user-select: none;
+  pointer-events: none;
+  animation: pl-pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pl-twinkle {
+  from { opacity: 0;          transform: scale(.4) rotate(var(--r0, 0deg)); }
+  to   { opacity: var(--op, .5); transform: scale(1)  rotate(var(--r1, 180deg)); }
+}
+
+@keyframes pl-pulse {
+  0%,100% { transform: translate(-50%,-50%) scale(.82)  rotate(-12deg); opacity: .65; }
+  50%     { transform: translate(-50%,-50%) scale(1.12) rotate(12deg);  opacity: 1;   }
+}
