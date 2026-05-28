@@ -311,9 +311,6 @@
   display: block;
   width: 100%;
   height: auto;
-  max-height: 80vh;
-  object-fit: contain;
-  background: #000;
 }
 @media (max-width: 900px) {
   .proyecto__bloque--video-full {
