@@ -49,12 +49,6 @@
       "objectPosition": "center 20%"
     },
     {
-      "tipo": "video",
-      "video": "Assets/img/Identidad/Rakuten tv/videoIntroMarca_comp.mp4",
-      "alt": "Rakuten TV — Vídeo intro de marca",
-      "caption": "Animación de marca — intro institucional"
-    },
-    {
       "tipo": "texto-duo",
       "parrafos": [
         "El rediseño de la interfaz pone el contenido en el centro: menos elementos decorativos, más protagonismo para las portadas y una navegación más intuitiva que reduce la fricción entre el usuario y lo que quiere ver.",
