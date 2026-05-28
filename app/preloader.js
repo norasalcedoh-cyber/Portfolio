@@ -2,7 +2,7 @@
   var el = document.getElementById('preloader');
   if (!el) return;
 
-  // Generar estrellas dispersas
+  // Estrellas de fondo dispersas
   for (var i = 0; i < 26; i++) {
     var s = document.createElement('span');
     s.className = 'preloader__star';
@@ -25,21 +25,54 @@
     el.appendChild(s);
   }
 
-  // Estrella central
+  // Estrella central giratoria
   var center = document.createElement('span');
   center.className = 'preloader__center';
   center.textContent = '★';
   el.appendChild(center);
 
+  // Destellos: pequeñas estrellas que salen volando del centro
+  function spawnSparkle() {
+    var spark = document.createElement('span');
+    spark.textContent = '★';
+    var angle = Math.random() * Math.PI * 2;
+    var dist  = 40 + Math.random() * 80;
+    var size  = (0.22 + Math.random() * 0.6).toFixed(2);
+    spark.style.cssText =
+      'position:absolute;top:50%;left:50%;' +
+      'color:#ff1fad;font-size:' + size + 'rem;' +
+      'line-height:1;pointer-events:none;user-select:none;' +
+      'will-change:transform,opacity;';
+    el.appendChild(spark);
+
+    var start = null;
+    var dur   = 480 + Math.random() * 420;
+
+    requestAnimationFrame(function frame(t) {
+      if (!start) start = t;
+      var p = (t - start) / dur;
+      if (p >= 1) { spark.remove(); return; }
+      var d = 1 - (1 - p) * (1 - p); // ease-out cuadrática
+      spark.style.transform =
+        'translate(calc(-50% + ' + (Math.cos(angle) * dist * d).toFixed(1) + 'px),' +
+        'calc(-50% + '           + (Math.sin(angle) * dist * d).toFixed(1) + 'px))';
+      spark.style.opacity = (1 - p).toFixed(3);
+      requestAnimationFrame(frame);
+    });
+  }
+
+  var sparkTimer = setInterval(spawnSparkle, 160);
+
   // Desmontar el preloader
   var dismissed = false;
   var startTime = Date.now();
-  var MIN_MS    = 700;   // mínimo visible
-  var MAX_MS    = 3500;  // máximo espera
+  var MIN_MS    = 700;
+  var MAX_MS    = 3500;
 
   function dismiss() {
     if (dismissed) return;
     dismissed = true;
+    clearInterval(sparkTimer);
     el.classList.add('is-done');
     el.addEventListener('transitionend', function () { el.remove(); }, { once: true });
   }

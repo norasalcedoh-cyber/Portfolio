@@ -35,15 +35,18 @@ $pink: #ff1fad;
   line-height: 1;
   user-select: none;
   pointer-events: none;
-  animation: pl-pulse 1.5s ease-in-out infinite;
+  filter:
+    drop-shadow(0 0 10px rgba(255,31,173,.8))
+    drop-shadow(0 0 28px rgba(255,31,173,.4));
+  animation: pl-spin 2s linear infinite;
 }
 
 @keyframes pl-twinkle {
-  from { opacity: 0;          transform: scale(.4) rotate(var(--r0, 0deg)); }
+  from { opacity: 0;             transform: scale(.4) rotate(var(--r0, 0deg)); }
   to   { opacity: var(--op, .5); transform: scale(1)  rotate(var(--r1, 180deg)); }
 }
 
-@keyframes pl-pulse {
-  0%,100% { transform: translate(-50%,-50%) scale(.82)  rotate(-12deg); opacity: .65; }
-  50%     { transform: translate(-50%,-50%) scale(1.12) rotate(12deg);  opacity: 1;   }
+@keyframes pl-spin {
+  from { transform: translate(-50%,-50%) rotate(0deg);   }
+  to   { transform: translate(-50%,-50%) rotate(360deg); }
 }
