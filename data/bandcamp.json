@@ -33,9 +33,19 @@
       ]
     },
     {
-      "tipo": "pdf-revista",
-      "src": "Assets/img/Identidad/BC mockup/Bandcamp_Sistema_De_Diseño.pdf",
-      "caption": "Sistema de diseño — documento completo"
+      "tipo": "duo",
+      "items": [
+        {
+          "src": "Assets/img/Identidad/BC mockup/phone.png",
+          "alt": "Bandcamp app móvil",
+          "caption": "Aplicación móvil — pantalla de artista"
+        },
+        {
+          "src": "Assets/img/Identidad/BC mockup/cami.png",
+          "alt": "Bandcamp camiseta",
+          "caption": "Merchandising — camiseta edición limitada"
+        }
+      ]
     },
     {
       "tipo": "img",

@@ -39,7 +39,6 @@ function init(d) {
   const cuerpo = document.querySelector('.proyecto__cuerpo');
   if (cuerpo && d.bloques) {
     cuerpo.innerHTML = d.bloques.map(renderBloque).join('');
-    document.querySelectorAll('[data-pdf]').forEach(el => initRevista(el));
   }
 
   const nav = document.querySelector('.proyecto__nav');
@@ -136,15 +135,6 @@ function renderBloque(b) {
         <div class="proyecto__bloque proyecto__bloque--texto-duo">
           ${b.parrafos.map(p => `<p>${p}</p>`).join('')}
         </div>`;
-    case 'pdf-revista':
-      return `
-        <div class="proyecto__bloque proyecto__bloque--revista" data-pdf="${b.src}">
-          <div class="revista">
-            <canvas class="revista__canvas"></canvas>
-            <div class="revista__barra"></div>
-          </div>
-          ${b.caption ? `<p class="proyecto__caption">${b.caption}</p>` : ''}
-        </div>`;
     case 'marquee':
       return `
         <div class="proyecto__bloque proyecto__bloque--marquee">
@@ -158,96 +148,4 @@ function renderBloque(b) {
     default:
       return '';
   }
-}
-
-function initRevista(block) {
-  const src    = block.dataset.pdf;
-  const canvas = block.querySelector('.revista__canvas');
-  const barra  = block.querySelector('.revista__barra');
-  const revEl  = block.querySelector('.revista');
-
-  const script = document.createElement('script');
-  script.src = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js';
-  script.onload = async () => {
-    pdfjsLib.GlobalWorkerOptions.workerSrc =
-      'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
-
-    let pdf, total, pages;
-    try {
-      pdf   = await pdfjsLib.getDocument(src).promise;
-      total = pdf.numPages;
-      pages = [];
-      const SCALE = Math.min(window.devicePixelRatio || 1, 2) * 1.5;
-      for (let i = 1; i <= total; i++) {
-        const page = await pdf.getPage(i);
-        const vp   = page.getViewport({ scale: SCALE });
-        const c    = document.createElement('canvas');
-        c.width = vp.width; c.height = vp.height;
-        await page.render({ canvasContext: c.getContext('2d'), viewport: vp }).promise;
-        pages.push(c);
-      }
-    } catch (e) { console.error('PDF no cargado:', e); return; }
-
-    canvas.width  = pages[0].width;
-    canvas.height = pages[0].height;
-    const ctx = canvas.getContext('2d');
-    ctx.drawImage(pages[0], 0, 0);
-
-    // Activar perspectiva en el contenedor (una sola vez)
-    revEl.style.perspective       = '2200px';
-    revEl.style.perspectiveOrigin = '50% 50%';
-
-    let current   = 0;
-    let isFlipping = false;
-
-    function updateBarra(i) {
-      if (barra) barra.style.width = ((i + 1) / total * 100) + '%';
-    }
-    updateBarra(0);
-
-    function flipTo(next) {
-      if (isFlipping) return;
-      isFlipping = true;
-      next = ((next % total) + total) % total;
-
-      // Crear overlay con el contenido de la página actual
-      const overlay = document.createElement('canvas');
-      overlay.width  = canvas.width;
-      overlay.height = canvas.height;
-      overlay.getContext('2d').drawImage(canvas, 0, 0);
-      Object.assign(overlay.style, {
-        position:         'absolute',
-        inset:            '0',
-        width:            '100%',
-        height:           '100%',
-        display:          'block',
-        transformOrigin:  'left center',
-        backfaceVisibility: 'hidden',
-        willChange:       'transform',
-        transition:       'transform 0.85s cubic-bezier(0.4, 0, 0.2, 1)',
-        filter:           'drop-shadow(6px 0 14px rgba(0,0,0,0.25))',
-        transform:        'rotateY(0deg)',
-      });
-
-      // Actualizar canvas de fondo con la nueva página YA
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-      ctx.drawImage(pages[next], 0, 0);
-      current = next;
-      updateBarra(current);
-
-      revEl.appendChild(overlay);
-
-      // Forzar reflow y lanzar la animación de volteo de página
-      overlay.getBoundingClientRect();
-      overlay.style.transform = 'rotateY(-180deg)';
-
-      setTimeout(() => {
-        overlay.remove();
-        isFlipping = false;
-      }, 900);
-    }
-
-    setInterval(() => flipTo(current + 1), 3000);
-  };
-  document.head.appendChild(script);
 }
