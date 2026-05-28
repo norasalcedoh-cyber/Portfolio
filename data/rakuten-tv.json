@@ -20,12 +20,6 @@
 
   "bloques": [
     {
-      "tipo": "video",
-      "video": "Assets/img/Identidad/Rakuten tv/videoIntroMarca.mp4",
-      "alt": "Rakuten TV — Vídeo intro de marca",
-      "caption": "Animación de marca — intro institucional"
-    },
-    {
       "tipo": "texto",
       "parrafos": [
         "Rakuten TV es una plataforma de streaming con un posicionamiento singular: entre el gran contenido de pago y el catálogo gratuito con publicidad. El rediseño trabaja sobre esa dualidad para construir una identidad que transmita calidad sin perder accesibilidad.",
@@ -53,6 +47,12 @@
       "alt": "Rakuten TV mockup exterior",
       "caption": "Aplicación en entorno real",
       "objectPosition": "center 20%"
+    },
+    {
+      "tipo": "video",
+      "video": "Assets/img/Identidad/Rakuten tv/videoIntroMarca.mp4",
+      "alt": "Rakuten TV — Vídeo intro de marca",
+      "caption": "Animación de marca — intro institucional"
     },
     {
       "tipo": "texto-duo",

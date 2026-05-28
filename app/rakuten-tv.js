@@ -103,6 +103,12 @@ function initMarquees() {
 
 function renderBloque(b) {
   switch (b.tipo) {
+    case 'video':
+      return `
+        <div class="proyecto__bloque proyecto__bloque--video-full">
+          <video src="${b.video}" autoplay muted loop playsinline></video>
+          ${b.caption ? `<p class="proyecto__caption">${b.caption}</p>` : ''}
+        </div>`;
     case 'full':
       return `
         <div class="proyecto__bloque proyecto__bloque--full">
