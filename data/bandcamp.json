@@ -12,10 +12,10 @@
   "intro": "Proyecto de rediseño de identidad visual para Bandcamp, la plataforma de distribución musical independiente. La propuesta actualiza el sistema visual manteniendo su esencia underground y auténtica, ganando coherencia gráfica y modernidad sin perder el carácter que la diferencia.",
 
   "meta": [
-    { "label": "Disciplina",  "valor": "Identidad Visual · UI Design" },
-    { "label": "Año",         "valor": "2025" },
+    { "label": "Disciplina",  "valor": "Identidad Visual · UI-UX Design" },
+    { "label": "Año",         "valor": "2026" },
     { "label": "Contexto",    "valor": "Proyecto académico — ESD Madrid" },
-    { "label": "Técnica",     "valor": "Branding · Mockup · Digital" }
+    { "label": "Técnica",     "valor": "Branding · Mockup · Digital · Web" }
   ],
 
   "bloques": [
@@ -29,7 +29,7 @@
       "tipo": "texto",
       "parrafos": [
         "Bandcamp es la plataforma de referencia para músicos independientes: directa, sin intermediarios, construida sobre la confianza entre artista y oyente. El rediseño parte de esa filosofía para construir un sistema visual más limpio y escalable.",
-        "La nueva identidad propone una paleta reducida, tipografía con carácter propio y un sistema de iconografía que convive con los géneros más diversos sin imponer una estética dominante."
+        "La nueva identidad propone una paletaprimaria en escala de grises, Luego irán asociados determiandos colores a cada uno de los géneros donde los artistas podrán definir el porcentaje de color asociado a sus canciones, álbumes o EPs, creando una identidad visual propia dentro del sistema de Bandcamp"
       ]
     },
     {
@@ -56,8 +56,8 @@
     {
       "tipo": "texto-duo",
       "parrafos": [
-        "El sistema de packaging refleja la diversidad de formatos que conviven en la plataforma: desde el vinilo hasta el álbum digital, cada soporte adapta la identidad sin perder coherencia.",
-        "La paleta cromática, basada en un negro profundo con acentos de color vivo, refuerza la actitud DIY que define a Bandcamp frente a las grandes plataformas de streaming."
+        "La posibilidad de elección de colores  refuerza la idea de comunidad y apoyo al artista emergente, ya que la marca no impone una estética cerrada, sino que ofrece un sistema capaz de adaptarse a cada proyecto.",
+        "Hemos trabajado con un elemento gráfico derivado de la propia tipografía decorativa primaria, aplicado en el peso Regular Ultrawild. "
       ]
     },
     {
@@ -97,7 +97,7 @@
     {
       "tipo": "texto",
       "parrafos": [
-        "El resultado es una identidad que respeta el espíritu de la plataforma mientras la hace más reconocible y profesional, preparada para crecer sin perder su autenticidad."
+        "El resultado recoge la nueva identidad de Bandcamp: un sistema visual vivo y flexible, en constante evolución, que traduce su esencia como espacio donde la música no solo se escucha, sino que se apoya, se comparte y se construye en comunidad."
       ]
     }
   ],
