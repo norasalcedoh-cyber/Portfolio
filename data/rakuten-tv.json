@@ -9,7 +9,7 @@
   "categoria": "Identidad Visual · UI Design",
   "titulo": "Rakuten<br>TV",
   "subtitulo": "Brand Redesign — Plataforma de streaming",
-  "intro": "Proyecto de rediseño de identidad visual para Rakuten TV, plataforma de streaming de contenido audiovisual. La propuesta construye un sistema visual más cohesionado, moderno y reconocible, manteniendo el rojo corporativo como eje cromático e incorporando nuevos recursos gráficos que refuerzan la experiencia de marca.",
+  "intro": "Nueva identidad de Rakuten: un sistema visual flexible y moderno, en el que se presenta una marca accesible, confiable e intuitiva, La innovación clave: forma + color + movimiento estén vinculados directamente al tipo de contenido y su experiencia de usuario. Son elementos informativos además de decorativos. ",
 
   "meta": [
     { "label": "Disciplina",  "valor": "Identidad Visual · UI Design" },
@@ -22,8 +22,8 @@
     {
       "tipo": "texto",
       "parrafos": [
-        "Rakuten TV es una plataforma de streaming con un posicionamiento singular: entre el gran contenido de pago y el catálogo gratuito con publicidad. El rediseño trabaja sobre esa dualidad para construir una identidad que transmita calidad sin perder accesibilidad.",
-        "El sistema parte del rojo corporativo y lo expande en una paleta más rica, incorporando tipografía de mayor jerarquía y un lenguaje gráfico que funciona tanto en pantalla como en entornos físicos."
+        "Rakuten TV es una plataforma que cuenta con un problema: NO hay suficientes momentos donde la marca “aparezca” como criterio de curación, tono o sistema visual propio. Falta de orden y ubicación, perdida en la navegación y contexto en el que se encuentra el usuario.",
+        "Se busca conseguir unidad dentro de la plataforma de Rakuten TV a través de la identidad  flexible que proporciona coherencia al usuario y dentro de los servicios que ofrece."
       ]
     },
     {
@@ -51,8 +51,8 @@
     {
       "tipo": "texto-duo",
       "parrafos": [
-        "El rediseño de la interfaz pone el contenido en el centro: menos elementos decorativos, más protagonismo para las portadas y una navegación más intuitiva que reduce la fricción entre el usuario y lo que quiere ver.",
-        "La marca en movimiento refuerza el posicionamiento premium: transiciones cuidadas, una paleta cromática consistente y una personalidad visual que se mantiene de la app al cartel, del spot a la señalética."
+        "La paleta se basa en tres colores funcionales: morado para premium, verde lima para alquiler y naranja para contenido gratuito. Cada color identifica un tipo de servicio.",
+        "El morado y el lima pueden combinarse en contenidos de pago, mientras que el naranja se mantiene independiente. En comunicaciones generales, los tres pueden convivir para representar toda la plataforma."
       ]
     },
     {
