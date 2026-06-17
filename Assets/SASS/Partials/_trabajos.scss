@@ -220,6 +220,10 @@ $muted:   rgba(0,0,0,.38);
   margin-top: .8rem;
 }
 
+.proyecto-detail--fanzine .proyecto__hero img {
+  object-position: center 68%;
+}
+
 // ── NAVEGACIÓN ENTRE PROYECTOS ────────────────────────────────────────
 .proyecto__nav {
   display: grid;

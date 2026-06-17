@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function init(d) {
+  document.querySelector('.proyecto-detail')?.classList.add('proyecto-detail--fanzine');
 
   // ── ESTRELLAS ──────────────────────────────────────────
   const starsBg = document.querySelector('.stars-bg');
