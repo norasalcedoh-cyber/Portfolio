@@ -1,0 +1,109 @@
+{
+  "titulo_pagina": "UN-BREAK — Nora Salcedo Hernández",
+  "hero": {
+    "src": "Assets/img/Imagenes_Un-break/Un-break_Salcedo_Nora_3.webp",
+    "alt": "UN-BREAK — visualización conceptual de una instalación inmersiva"
+  },
+  "categoria": "Diseño gráfico experimental · Identidad visual · Diseño interactivo · Desarrollo web",
+  "titulo": "UN-BREAK",
+  "subtitulo": "404 Found",
+  "intro": "UN-BREAK es un proyecto de diseño gráfico experimental que cuestiona el consumo automático de redes sociales a través de la interrupción visual.",
+  "meta": [
+    {
+      "label": "Año",
+      "valor": "2026"
+    },
+    {
+      "label": "Web del proyecto",
+      "valor": "<a class=\"un-break__enlace\" href=\"https://norasalcedoh-cyber.github.io/Un-break-web/\" target=\"_blank\" rel=\"noopener noreferrer\">Explorar UN-BREAK ↗</a>"
+    }
+  ],
+  "bloques": [
+    {
+      "tipo": "texto",
+      "parrafos": [
+        "UN-BREAK es un proyecto de diseño gráfico experimental que cuestiona el consumo automático de redes sociales a través de la interrupción visual. La propuesta transforma la interfaz de Instagram Web en un espacio de experimentación gráfica, donde los hábitos de navegación del usuario desencadenan alteraciones que dificultan la continuidad de la experiencia digital."
+      ]
+    },
+    {
+      "tipo": "texto",
+      "parrafos": [
+        "El proyecto parte de una pregunta: ¿qué sucede cuando una interfaz diseñada para facilitar el consumo continuo comienza a dificultarlo?",
+        "UN-BREAK utiliza la distorsión, la fragmentación y la pérdida de legibilidad como recursos gráficos para introducir fricciones en una experiencia habitualmente fluida. El objetivo no es bloquear el acceso al contenido, sino provocar una pausa que invite a cuestionar nuestra relación con las redes sociales."
+      ]
+    },
+    {
+      "tipo": "texto",
+      "parrafos": [
+        "La identidad de UN-BREAK se construye a partir de la alteración de sus propios elementos gráficos. La tipografía se fragmenta, se comprime y se deforma, trasladando al lenguaje visual el mismo principio de interrupción que define el proyecto.",
+        "El uso de degradados intensos, contrastes cromáticos y texturas digitales refuerza una estética vinculada a la saturación informativa y al error tecnológico."
+      ]
+    },
+    {
+      "tipo": "img",
+      "src": "Assets/img/Imagenes_Un-break/Un-break_Salcedo_Nora_1.webp",
+      "alt": "Identidad de UN-BREAK aplicada a una marquesina urbana",
+      "caption": "Identidad visual — intervención publicitaria urbana"
+    },
+    {
+      "tipo": "texto",
+      "parrafos": [
+        "UN-BREAK se materializa en una extensión para Google Chrome que interviene directamente sobre Instagram Web. A partir de comportamientos como la velocidad del scroll, el tiempo de permanencia o las interacciones del usuario, la plataforma experimenta distintas transformaciones visuales.",
+        "Compresión tipográfica, desaparición de imágenes, distorsiones, codificación ASCII y efectos glitch convierten las acciones cotidianas de navegación en experiencias de interrupción."
+      ],
+      "enlace": {
+        "href": "https://github.com/norasalcedoh-cyber/Extension.un-break/releases/download/v0.2.0/Extension.zip",
+        "texto": "descargate la extension",
+        "descarga": true
+      }
+    },
+    {
+      "tipo": "img",
+      "src": "Assets/img/Imagenes_Un-break/Un-break_Salcedo_Nora_4.webp",
+      "alt": "Visualización de una alteración glitch en el feed de Instagram"
+    },
+    {
+      "tipo": "texto",
+      "parrafos": [
+        "La web expositiva reúne el concepto, la identidad y el funcionamiento de UN-BREAK en un entorno digital interactivo. A través de composiciones tipográficas experimentales, animaciones y recursos visuales, permite descubrir las intervenciones y acceder a la descarga de la extensión."
+      ],
+      "enlace": {
+        "href": "https://norasalcedoh-cyber.github.io/Un-break-web/",
+        "texto": "Visitar la web de UN-BREAK ↗"
+      }
+    },
+    {
+      "tipo": "texto",
+      "parrafos": [
+        "UN-BREAK explora su aplicación en otros soportes mediante visualizaciones conceptuales de una instalación inmersiva, una publicación editorial y una intervención publicitaria urbana.",
+        "La instalación amplifica la saturación digital a través de proyecciones envolventes; la revista recopila alteraciones gráficas y reflexiones críticas sobre el uso de redes sociales; y la marquesina traslada la identidad del proyecto al espacio público."
+      ]
+    },
+    {
+      "tipo": "img",
+      "src": "Assets/img/Imagenes_Un-break/Un-break_Salcedo_Nora_2.webp",
+      "alt": "Publicación editorial de UN-BREAK abierta en una doble página",
+      "caption": "Visualización conceptual — publicación editorial"
+    },
+    {
+      "tipo": "texto",
+      "parrafos": [
+        "UN-BREAK plantea una contradicción: encontrar algo a través del error. Las interrupciones visuales dejan de entenderse como fallos para convertirse en oportunidades de recuperar la atención y tomar conciencia de nuestros hábitos digitales."
+      ]
+    }
+  ],
+  "nav": {
+    "prev": {
+      "href": "rakuten-tv.html",
+      "thumb": "Assets/img/Identidad/Rakuten tv/Rectangle 128.png",
+      "alt": "Rakuten TV",
+      "nombre": "Rakuten TV"
+    },
+    "next": {
+      "href": "chimpatia.html",
+      "thumb": "Assets/img/Identidad/Mockup chimpatia/phone 3.png",
+      "alt": "Chimpatía",
+      "nombre": "Chimpatía"
+    }
+  }
+}

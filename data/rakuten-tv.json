@@ -120,10 +120,10 @@
       "nombre": "Rediseño Bandcamp"
     },
     "next": {
-      "href":   "chimpatia.html",
-      "thumb":  "Assets/img/Identidad/Mockup chimpatia/phone 3.png",
-      "alt":    "Chimpatía",
-      "nombre": "Chimpatía"
+      "href": "un-break.html",
+      "thumb": "Assets/img/Imagenes_Un-break/Un-break_Salcedo_Nora_3.webp",
+      "alt": "UN-BREAK",
+      "nombre": "UN-BREAK"
     }
   }
 }
